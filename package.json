@@ -1,0 +1,26 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass natour/sass/style.scss natour/css/style.css -w",
+    "compile:sass": "node-sass natour/sass/style.scss natour/css/style.comp.css",
+    "concat:css": "concat -o natour/css/style.concat.css natour/css/icon-font.css natour/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 version' natour/css/style.concat.css -o natour/css/style.prefix.css "
+  },
+  "author": "khushal",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "concat": "^1.0.3",
+    "npm-sass": "^3.1.0",
+    "postcss-cli": "^10.0.0",
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss-cli": "^10.0.0",
+    "node-sass": "^7.0.1"
+  }
+}
